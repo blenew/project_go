@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'GmarketSansLight'; font-style: normal; font-weight: 300;
+	src: local('Gmarket Sans Light'), local('GmarketSans-Light'),
+	url('../font/GmarketSansLight.woff2') format('woff2'),
+	url('../font/GmarketSansLight.woff') format('woff');
+}
+@font-face {
+	font-family: 'GmarketSansMedium'; font-style: normal; font-weight: 500;
+	src: local('Gmarket Sans Medium'), local('GmarketSans-Medium'),
+	url('../font/GmarketSansMedium.woff2') format('woff2'),
+	url('../font/GmarketSansMedium.woff') format('woff');
+}
+@font-face {
+	font-family: 'GmarketSansBold'; font-style: normal; font-weight: 700;
+	src: local('Gmarket Sans Bold'), local('GmarketSans-Bold'),
+	url('../font/GmarketSansBold.woff2') format('woff2'),
+	url('../font/GmarketSansBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'notokr-thin';
+	src: url('../font/notokr-thin.eot');
+	src: url('../font/notokr-thin.eot?#iefix') format('embedded-opentype'), url('../font/notokr-thin.woff2') format('woff2'), url('../font/notokr-thin.woff') format('woff'), url('../font/notokr-thin.ttf') format('truetype'), url('../font/notokr-thin.svg#notokr-thin') format('svg');
+}
+@font-face {
+	font-family: 'notokr-light';
+	src: url('../font/notokr-light.eot');
+	src: url('../font/notokr-light.eot?#iefix') format('embedded-opentype'), url('../font/notokr-light.woff2') format('woff2'), url('../font/notokr-light.woff') format('woff'), url('../font/notokr-light.ttf') format('truetype'), url('../font/notokr-light.svg#notokr-light') format('svg');
+}
+@font-face {
+	font-family: 'notokr-demilight';
+	src: url('../font/notokr-demilight.eot');
+	src: url('../font/notokr-demilight.eot?#iefix') format('embedded-opentype'), url('../font/notokr-demilight.woff2') format('woff2'), url('../font/notokr-demilight.woff') format('woff'), url('../font/notokr-demilight.ttf') format('truetype'), url('../font/notokr-demilight.svg#notokr-demilight') format('svg');
+}
+@font-face {
+	font-family: 'notokr-regular';
+	src: url('../font/notokr-regular.eot');
+	src: url('../font/notokr-regular.eot?#iefix') format('embedded-opentype'), url('../font/notokr-regular.woff2') format('woff2'), url('../font/notokr-regular.woff') format('woff'), url('../font/notokr-regular.ttf') format('truetype'), url('../font/notokr-regular.svg#notokr-regular') format('svg');
+}
+@font-face {
+	font-family: 'notokr-medium';
+	src: url('../font/notokr-medium.eot');
+	src: url('../font/notokr-medium.eot?#iefix') format('embedded-opentype'),  url('../font/notokr-medium.ttf') format('truetype'), url('../font/notokr-medium.svg#notokr-medium') format('svg');
+}
+@font-face {
+	font-family: 'notokr-bold';
+	src: url('../font/notokr-bold.eot');
+	src: url('../font/notokr-bold.eot?#iefix') format('embedded-opentype'), url('../font/notokr-bold.woff2') format('woff2'), url('../font/notokr-bold.woff') format('woff'), url('../font/notokr-bold.ttf') format('truetype'), url('../font/notokr-bold.svg#notokr-bold') format('svg');
+}
+@font-face {
+	font-family: 'notokr-black';
+	src: url('../font/notokr-black.eot');
+	src: url('../font/notokr-black.eot?#iefix') format('embedded-opentype'), url('../font/notokr-black.woff2') format('woff2'), url('../font/notokr-black.woff') format('woff'), url('../font/notokr-black.ttf') format('truetype'), url('../font/notokr-black.svg#notokr-black') format('svg');
+}
+
+body { font-size:12px; font-family:'notokr-regular', sans-serif; color: #293644; letter-spacing:-0.3em; }
+.light { font-family:'notokr-light'; }
+.medium { font-family:'notokr-medium'; }
+.bold { font-family:'notokr-bold'; }
+.black { font-family:'notokr-black'; }
+.gmarket { font-family:'GmarketSansMedium'; }
+.gmarket.light { font-family:'GmarketSansLight'; }
+.gmarket.bold { font-family:'GmarketSansBold'; }

@@ -1,8 +1,8 @@
 <template>
     <header>
         <div class="inner">
-            <h1 v-if="mobile==false || (CurrentRoute=='/' || CurrentRoute=='/detail')"><router-link to="/"><img src="../../assets/common/logo.svg" alt="원하고" /></router-link></h1>
-            <p v-if="mobile==true && (CurrentRoute!=='/' && CurrentRoute!=='/detail')" id="btn_prev">
+            <h1 v-if="mobile==false || (CurrentRoute=='/' || CurrentRoute=='/home' || CurrentRoute=='/detail' || CurrentRoute=='/product')"><router-link to="/"><img src="../../assets/common/logo.svg" alt="원하고" /></router-link></h1>
+            <p v-if="mobile==true && (CurrentRoute=='/' && CurrentRoute=='/home' && CurrentRoute=='/detail' && CurrentRoute=='/product')" id="btn_prev">
                 <a href="javascript:" @click="$router.go(-1)">
                     <img src="../../assets/common/ico-22-back.svg" alt="뒤로" />
                     <h1 v-if="CurrentRoute==='/wallet' || CurrentRoute==='/wallet-list' || CurrentRoute==='/wallet-make' || CurrentRoute==='/wallet-viewitem'">홍길동님 지갑</h1>
@@ -12,7 +12,7 @@
             </p>
             <nav :class="{ active: showMenu }">
                 <ul>
-                    <li><router-link @click="showMenu=false" :class="{ active: CurrentRoute==='/' }" to="/">홈</router-link></li>
+                    <li><router-link @click="showMenu=false" :class="{ active: CurrentRoute==='/'||CurrentRoute==='/index' }" to="/">홈</router-link></li>
                     <li><router-link to="">회사소개</router-link></li>
                     <li><router-link to="">서비스</router-link></li>
                     <li><router-link to="">WONT SCAN</router-link></li>

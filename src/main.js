@@ -8,7 +8,9 @@ import './css/page.css';
 
 import App from './App.vue';
 import Home from './views/Home.vue';
+import Index from './views/Index.vue';
 import Detail from './views/Detail.vue';
+import Product from './views/Product.vue';
 import Wallet from './views/Wallet.vue';
 import WalletList from './views/WalletList.vue';
 import WalletMake from './views/WalletMake.vue';
@@ -23,37 +25,31 @@ const router = createRouter({
     routes: [
         {
             path: '/',
-            component: Home,
-        },        
+            components: {
+                default: Home,
+                modal: Wallet
+            },
+        },
+        {
+            path: '/index',
+            components: {
+                default: Index,
+                modal: Wallet
+            },
+        },    
         {
             path: '/detail',
             components: {
                 default: Detail,
                 modal: Wallet
             },
-            children: [
-                {
-                    path: '/',
-                    components: {
-                        default: Detail,
-                        modal: Wallet
-                    }
-                },                
-                {
-                    path: 'wallet',
-                    components: {
-                        default: Detail,
-                        modal: Wallet
-                    }
-                },
-                {
-                    path: 'wallet-list',
-                    components: {
-                        default: Detail,
-                        modal: WalletList
-                    }
-                },                
-            ],            
+        },
+        {
+            path: '/product',
+            components: {
+                default: Product,
+                modal: Wallet
+            },
         },
         {
             path: '/wallet',
